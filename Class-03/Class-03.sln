@@ -5,7 +5,11 @@ VisualStudioVersion = 17.13.35818.85 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Loops\Arrays.csproj", "{5ADE3673-E2FC-420C-B89F-49B39C2F5959}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops this time\Loops.csproj", "{CFDFDA2E-5C77-4285-AF40-7586946682D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array Exercises", "Loops this time\Array Exercises.csproj", "{CFDFDA2E-5C77-4285-AF40-7586946682D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops1", "Loops1\Loops1.csproj", "{74BE1BFF-F6A4-41D1-B17E-47DCE69C3AEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "Methods\Methods.csproj", "{DFFD2FB7-5BED-466D-A168-034007B1C556}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{CFDFDA2E-5C77-4285-AF40-7586946682D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFDFDA2E-5C77-4285-AF40-7586946682D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFDFDA2E-5C77-4285-AF40-7586946682D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BE1BFF-F6A4-41D1-B17E-47DCE69C3AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BE1BFF-F6A4-41D1-B17E-47DCE69C3AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BE1BFF-F6A4-41D1-B17E-47DCE69C3AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BE1BFF-F6A4-41D1-B17E-47DCE69C3AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFFD2FB7-5BED-466D-A168-034007B1C556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFFD2FB7-5BED-466D-A168-034007B1C556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFFD2FB7-5BED-466D-A168-034007B1C556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFFD2FB7-5BED-466D-A168-034007B1C556}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
