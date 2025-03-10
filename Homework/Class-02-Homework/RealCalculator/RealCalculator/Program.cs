@@ -18,7 +18,7 @@ if (!double.TryParse(Console.ReadLine(), out double num2))
     return;
 }
 
-// Branching: Perform calculation based on operator
+// Branching the operation
 double result = 0;
 bool isValidOperator = true;
 
@@ -49,6 +49,6 @@ switch (op)
         break;
 }
 
-// Display result only if everything was valid
+
 if (isValidOperator)
     Console.WriteLine($"{num1} {op} {num2} = {result}");
