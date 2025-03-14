@@ -4,15 +4,8 @@
     {
         static void Main(string[] args)
         {
-            string userInput = Console.ReadLine();
-
-            AgeCalculation();
+            Console.WriteLine("Hello, World!");
         }
 
-        // A blank method with no implementation
-        static void AgeCalculation()
-        {
-           
-        }
     }
 }
