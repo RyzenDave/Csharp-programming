@@ -4,15 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATMthingy.Classes
+namespace Inheritance.Models
 {
-    public class ATM
+    public class Cat : bool
     {
-      public ATM()
-        {
-
-        }
-
-       
     }
 }

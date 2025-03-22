@@ -4,15 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATMthingy.Classes
+namespace Qinshift.Library.Services
 {
-    public class ATM
+    class MonthServices
     {
-      public ATM()
-        {
-
-        }
-
-       
     }
 }
