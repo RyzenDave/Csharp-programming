@@ -38,7 +38,7 @@ namespace Exercise1
             Cinema cinema2 = new Cinema("Milenium");
             cinema2.Halls = new List<int>() { 1, 2 };
             cinema2.Movies = MovieSet2;
-
+            //try catch block
             try
             {
                 Console.WriteLine("Choose a cinema:");
@@ -94,7 +94,7 @@ namespace Exercise1
                     Console.WriteLine("3. Comedy");
                     Console.WriteLine("4. Action");
                     Console.WriteLine("5. Drama");
-
+                    //didnt know how else to do this one 
                     int genreChoice = int.Parse(Console.ReadLine());
                     Genre selectedGenre;
 
@@ -119,7 +119,8 @@ namespace Exercise1
                             Console.WriteLine("Invalid genre selection.");
                             return;
                     }
-
+                   
+                    //Makes a movie list of numbers to choose from
                     var filteredMovies = currentcinema.Movies.FindAll(m => m.Genre == selectedGenre);
                     if (filteredMovies.Count > 0)
                     {
@@ -145,6 +146,9 @@ namespace Exercise1
                     }
                 }
             }
+
+            //might not work as they should 
+
             catch (Exception)
             {
                 Console.WriteLine("An error occurred while processing your input.");
