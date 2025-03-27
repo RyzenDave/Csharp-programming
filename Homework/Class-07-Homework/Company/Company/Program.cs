@@ -8,7 +8,7 @@ namespace Company
         {
             Employee[] Company = new Employee[]
             {
-                new Contractor ("John Helldiver", 100,)
+               
 
             };
         }
