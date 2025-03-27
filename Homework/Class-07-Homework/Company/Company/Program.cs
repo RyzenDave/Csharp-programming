@@ -1,11 +1,16 @@
-﻿namespace Company
+﻿using Company.Models;
+
+namespace Company
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            string[] Company = Array.Empty<string>();
+            Employee[] Company = new Employee[]
+            {
+                new Contractor ("John Helldiver", 100,)
+
+            };
         }
     }
 }
