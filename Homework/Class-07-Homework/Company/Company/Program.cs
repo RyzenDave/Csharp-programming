@@ -1,16 +1,18 @@
-﻿using Company.Models;
+﻿using CompanyLib;
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Company
 {
-    internal class Program
+    
+internal class Program
     {
         static void Main(string[] args)
         {
-            Employee[] Company = new Employee[]
-            {
-               
-
-            };
+            CEO ceoName = new CEO("John", "Helldiver", 100000);
+            ceoName.PrintInfo();
+            ceoName.PrintEmployees();
         }
     }
 }
