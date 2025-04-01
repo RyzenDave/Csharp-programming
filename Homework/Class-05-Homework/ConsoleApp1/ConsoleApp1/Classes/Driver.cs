@@ -22,6 +22,10 @@ namespace BeamNGSkillz.Classes
             double effectiveSpeed1 = Car.CalculateSpeed(car1.Driver, car1.Speed);
             double effectiveSpeed2 = Car.CalculateSpeed(car2.Driver, car2.Speed);
 
+
+
+            
+
             Console.WriteLine($"{car1.Model} effective speed: {effectiveSpeed1}");
             Console.WriteLine($"{car2.Model} effective speed: {effectiveSpeed2}");
             if (effectiveSpeed1 > effectiveSpeed2)
