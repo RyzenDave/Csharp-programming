@@ -1,4 +1,4 @@
-﻿namespace Exercise1
+﻿namespace AcademyManagementApp
 {
     internal class Program
     {

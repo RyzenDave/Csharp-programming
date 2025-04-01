@@ -85,7 +85,7 @@ namespace Exercise1
                     {
                         Console.WriteLine("Invalid movie selection.");
                     }
-                }
+                }s
                 else if (filterChoice == 2)
                 {
                     Console.WriteLine("Select a genre:");
