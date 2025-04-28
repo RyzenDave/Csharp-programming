@@ -60,7 +60,7 @@ namespace CompanyLib
         }
         public override void PrintInfo()
         {
-            Console.WriteLine($"the CEO of ArrowHead:Firstname-{FirstName},Lastname-{LastName} with a salary of-{Salary}");
+            Console.WriteLine($"the CEO of ArrowHead Studios:Firstname:{FirstName},Lastname:{LastName} with a salary of\n{Salary}");
         }
     }
 }
