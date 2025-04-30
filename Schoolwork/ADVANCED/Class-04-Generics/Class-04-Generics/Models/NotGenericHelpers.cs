@@ -21,7 +21,7 @@ namespace Class_04_Generics.Models
             string first = strings.First();
             Console.WriteLine($"This list has {strings.Count} items and is of type  ");
         }
-        public void GoThroughInts(List<int> ints)
+        public void GoThroughInts(List<int> ints)    
         {
             foreach(int num in ints)
             {
