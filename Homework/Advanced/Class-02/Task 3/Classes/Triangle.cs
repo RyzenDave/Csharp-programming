@@ -9,9 +9,9 @@ namespace Task_3.Classes
 
     public class Triangle : Shapes
     {
-        public double Side1 { get; }
-        public double Side2 { get; }
-        public double Side3 { get; }
+        public double Side1 { get; set; }
+        public double Side2 { get; set; }
+        public double Side3 { get; set; }
 
         public Triangle(double side1, double side2, double side3)
         {
