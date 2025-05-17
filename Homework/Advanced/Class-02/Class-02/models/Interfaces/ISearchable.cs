@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Class_02.models.Interfaces
 {
-    public interface Searchable
+    public interface ISearchable
     {
         string Search(string word);
     }
