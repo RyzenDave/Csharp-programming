@@ -9,9 +9,7 @@ namespace TaxiManager.Domain.Models
 {
     public class User : BaseEntity
     {
-        public User() 
-        {
-        }
+       
 
         public User(string username, string password, Role role)
         {
@@ -22,6 +20,8 @@ namespace TaxiManager.Domain.Models
         public string Username { get; set; }
         public string Password { get; set; }
         public Role Role { get; set; }
+        public override int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public override string Print()
         {
             return $"Id: {Id}, Username: {Username}, Password: {Password}, Role: {Role}";

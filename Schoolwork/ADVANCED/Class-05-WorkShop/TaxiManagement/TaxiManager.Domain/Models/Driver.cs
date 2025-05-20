@@ -38,6 +38,8 @@ namespace TaxiManager.Domain.Models
 
         public string fullName => $"{firstName} {lastName}";
 
+        public override int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public override string Print()
         {
             throw new NotImplementedException();

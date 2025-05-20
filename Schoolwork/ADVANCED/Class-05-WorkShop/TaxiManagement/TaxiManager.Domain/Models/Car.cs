@@ -12,6 +12,7 @@ namespace TaxiManager.Domain.Models
         public string LicensePlate { get; set; } = licensePlate;
         public DateTime LicensePlateExpiryDate { get; set; } = licensePlateExpiryDate;
         public List<Driver> DriversAssigned { get; set; } = new List<Driver>();
+        public override int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public override string Print()
         {
