@@ -55,6 +55,7 @@ namespace TaxiManager.DataAccess.Implementations
             if (item != null)
             {
                 _db.Remove(item);
+
                 _db.Add(entity);
             }
         }
