@@ -1,4 +1,7 @@
-﻿namespace Class_02
+﻿using Class_02.models.Classes;
+using Class_02.models.Interfaces;
+
+namespace Class_02
 {
     using System; // For Console.WriteLine
 
@@ -6,7 +9,7 @@
     {
         public static void Main(string[] args)
         {
-            // Create a Document object
+            // Created a doc object
             Document myDoc = new Document("This is a sample document with some text. C# is fun.");
             string wordToSearchDoc = "C#";
             bool foundInDoc = myDoc.Search(wordToSearchDoc);
@@ -17,7 +20,7 @@
             bool foundInEmptyDoc = emptyDoc.Search(wordToSearchEmpty);
             Console.WriteLine($"Word '{wordToSearchEmpty}' found in empty document: {foundInEmptyDoc}\n");
 
-            // Create a WebPage object
+            // Made webpage object
             WebPage myPage = new WebPage("My Awesome Page", "<html><body><h1>Welcome</h1><p>This page talks about programming and interfaces.</p></body></html>");
             string wordToSearchPage = "interfaces";
             bool foundInPage = myPage.Search(wordToSearchPage);
@@ -29,7 +32,7 @@
             Console.WriteLine($"Word '{wordToSearchAnotherPage}' found in web page: {foundInAnotherPage}\n");
 
 
-            // Example of using the interface type (polymorphism)
+            // Using interface type for polymorphism
             Console.WriteLine("\n--- Demonstrating Polymorphism ---");
             ISearchable[] searchableItems = new ISearchable[]
             {
@@ -46,54 +49,5 @@
             }
         }
     }
-
-    // --- Interface Definition ---
-    public interface ISearchable
-    {
-        bool Search(string word);
-    }
-
-    // --- Class Implementations ---
-    public class Document : ISearchable
-    {
-        private string _content;
-
-        public Document(string content)
-        {
-            _content = content;
-        }
-
-        public bool Search(string word)
-        {
-            Console.Write($"Searching in Document: ");
-            if (string.IsNullOrEmpty(_content) || string.IsNullOrEmpty(word))
-            {
-                return false;
-            }
-            return _content.Contains(word, StringComparison.OrdinalIgnoreCase); // Case-insensitive
-        }
-    }
-
-    public class WebPage : ISearchable
-    {
-        private string _htmlContent;
-        private string _pageTitle;
-
-        public WebPage(string title, string htmlContent)
-        {
-            _pageTitle = title;
-            _htmlContent = htmlContent;
-        }
-
-        public bool Search(string word)
-        {
-            Console.Write($"Searching in WebPage '{_pageTitle}': ");
-            if (string.IsNullOrEmpty(word)) return false;
-
-            bool foundInTitle = !string.IsNullOrEmpty(_pageTitle) && _pageTitle.Contains(word, StringComparison.OrdinalIgnoreCase);
-            bool foundInContent = !string.IsNullOrEmpty(_htmlContent) && _htmlContent.Contains(word, StringComparison.OrdinalIgnoreCase);
-
-            return foundInTitle || foundInContent;
-        }
-    }
 }
+

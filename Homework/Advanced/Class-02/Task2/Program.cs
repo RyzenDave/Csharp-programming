@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Dynamic;
+using Task2.Classes;
 
 namespace Task2
 {
@@ -6,8 +8,8 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-         
-            //Neznam kako da gi implementiram vo MAIN da isprinta rezultati
+            var circle = new Circle(5); // Example radius
+            circle.getArea();
         }
     }
 }
