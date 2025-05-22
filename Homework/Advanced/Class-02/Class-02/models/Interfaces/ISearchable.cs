@@ -8,6 +8,6 @@ namespace Class_02.models.Interfaces
 {
     public interface ISearchable
     {
-        string Search(string word);
+        bool Search(string word);
     }
 }
