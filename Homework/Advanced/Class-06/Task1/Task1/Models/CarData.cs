@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Task1.Models;
 
-    public static class CarsData
+public static class CarsData
+{
+    public static List<Car> Cars = new List<Car>();
+    static CarsData()
     {
-        public static List<Car> Cars = new List<Car>();
-        static CarsData()
-        {
-            LoadCars();
-        }
+        LoadCars();
+    }
     public static void LoadCars()
     {
         Cars = new List<Car>()
@@ -425,6 +425,22 @@ namespace Task1.Models;
            new Car() { Model = "Chevy S-10", MilesPerGalon = 31, AccelerationTime = 19.4, Cylinders = 4, HorsePower = 82, Origin = "US", Weight = 2720 },
 
 
-            };
-        } 
+
+
+        };
+
+        var europeanCountries = new List<string> { "Germany", "France", "Italy", "UK", "Sweden" };
+        var europeanCars = Cars.Where(car => europeanCountries.Contains(car.Origin)).ToList();
+        Console.WriteLine("=== EUROPEAN CARS ===");
+        foreach (var car in europeanCars)
+        {
+            Console.WriteLine(
+                $"Model: {car.Model}\n" +
+                $"Origin: {car.Origin}\n" +
+                $"MPG: {car.MilesPerGalon}, HP: {car.HorsePower}, Cylinders: {car.Cylinders}\n" +
+                $"Weight: {car.Weight} lbs, 0-100km/h: {car.AccelerationTime}s\n" +
+                new string('-', 30) // Separator line
+            );
+        }
     }
+}
