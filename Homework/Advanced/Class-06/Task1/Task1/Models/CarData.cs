@@ -429,18 +429,6 @@ public static class CarsData
 
         };
 
-        var europeanCountries = new List<string> { "Germany", "France", "Italy", "UK", "Sweden" };
-        var europeanCars = Cars.Where(car => europeanCountries.Contains(car.Origin)).ToList();
-        Console.WriteLine("=== EUROPEAN CARS ===");
-        foreach (var car in europeanCars)
-        {
-            Console.WriteLine(
-                $"Model: {car.Model}\n" +
-                $"Origin: {car.Origin}\n" +
-                $"MPG: {car.MilesPerGalon}, HP: {car.HorsePower}, Cylinders: {car.Cylinders}\n" +
-                $"Weight: {car.Weight} lbs, 0-100km/h: {car.AccelerationTime}s\n" +
-                new string('-', 30) // Separator line
-            );
-        }
+        
     }
 }
